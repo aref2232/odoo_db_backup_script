@@ -35,7 +35,9 @@ Add the Following Lines:
 
 ###############
 0 12 * * * /opt/db_backup/cleanup.sh
+
 0 * * * * /opt/db_backup/backup.sh -d DB-NAME -h http://127.0.0.1:8069 -p DB-PASS
+
 2 * * * * /home/ubuntu/sync_onedrive.sh
 ###############
 
